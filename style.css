@@ -1,0 +1,62 @@
+body {
+    background-color: #232D3F;
+    color: aliceblue;
+}
+
+.Title {
+    text-align: center;
+}
+
+.HomeButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.go {
+    background-color: #ff0000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.HomeButton:hover, .go:hover {
+    cursor: pointer;
+}
+
+.dateFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    row-gap: 10px;
+}
+
+.startDate, .endDate, .nameInput, .soundSelect{
+    display: block;
+    text-align: center;
+    margin-inline: 50px;
+}
+
+.BREAK {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.timerGo {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+

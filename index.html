@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Timer - Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+
+<div class="Title">
+    <h1>Day Timer 3000</h1>
+    <a href="./index.html"><button class="HomeButton">Home</button></a> <a href="./about.html"><button class="HomeButton">About</button></a>
+</div>
+
+<div class="dateFlex">
+
+    <div class="startDate">
+        <label for="startDate" class="startDate">Start Date:</label>
+        <input type="datetime-local" id="startDate" class="startDate" disabled/>
+    </div>
+
+    <div class="endDate">
+        <label for="endDate" class="endDate">End Date:</label>
+        <input type="datetime-local" id="endDate" class="endDate"/>
+    </div>
+
+    <div class="BREAK"></div>
+
+    <div class="BREAK"></div>
+
+    <div class="nameInput">
+        <label for="nameInput">Name of Timer:</label>
+        <input type="text" class="nameInput" id="nameInput">
+    </div>
+
+    <div class="soundSelect">
+        <label for="soundSelect" class="soundSelect">Alarm Sound:</label>
+        <select name="soundSelect" id="soundSelect"> <option value="FF7">FF7</option> <option value="Megaman">Megaman</option> <option value="Sims">Sims</option> <option value="Sweet_Victory">Sweet Victory</option> <option value="Uhm">I don't know where this is from</option> <option value="Windows">Windows</option> </select>
+    </div>
+
+    <div class="BREAK"></div>
+    <button class="go" id="go" onclick="startTimer();">GO!</button>
+    
+</div>
+
+<div class="timerGo" id="timerGo">
+    THERE IS NO TIMER RUNNING CURRENTLY
+</div>
+
+<body onload="setInterval(curDate, 1000);">  
+
+</body>
+</html>
