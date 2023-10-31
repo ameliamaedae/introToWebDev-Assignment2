@@ -1,7 +1,7 @@
 var sound = new Audio; 
 
 function timerRunning() { 
-    var nope = new Audio('./sounds/emergency-meeting.mp3'); 
+    var nope = new Audio('Sounds/emergency-meeting.mp3'); 
     nope.play();
     alert("A timer is already running!");
 }
@@ -29,27 +29,27 @@ function startTimer() {;
     switch (soundSelect){
         case "FF7":
             //code
-            sound = new Audio('./Sounds/ff7.mp3')
+            sound = new Audio('Sounds/ff7.mp3')
         break;
         case "Megaman":
             //code
-            sound = new Audio('./Sounds/megaman.mp3')
+            sound = new Audio('Sounds/megaman.mp3')
         break;
         case "Sims":
             //code
-            sound = new Audio('./Sounds/sims.mp3')
+            sound = new Audio('Sounds/sims.mp3')
         break;
         case "Sweet_Victory":
             //code
-            sound = new Audio('./Sounds/sweet.mp3')
+            sound = new Audio('Sounds/sweet.mp3')
         break;
         case "Uhm":
             //code
-            sound = new Audio('./Sounds/Uhm.mp3')
+            sound = new Audio('Sounds/Uhm.mp3')
         break;
         case "Windows":
             //code
-            sound = new Audio('./Sounds/windows.mp3')
+            sound = new Audio('Sounds/windows.mp3')
         break;
         default: 
         alert("How did this happen?");
