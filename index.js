@@ -3,7 +3,6 @@ var sound = new Audio;
 function timerRunning() { 
     var nope = new Audio('Sounds/emergency-meeting.mp3'); 
     nope.play();
-    delay(1000);
     alert("A timer is already running!");
 }
 
