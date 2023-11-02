@@ -14,7 +14,7 @@ function curDate() {
     var cSec = curDate.getSeconds().toString().padStart(2,"0");
     var aYear = curDate.getFullYear();
     var bMonth = curDate.getMonth() + 1;
-    bMonth = bMonth.toString().padStart(2,"0");
+    bMonth = bMonth.toString();
     var cDay = curDate.getDate();
     var curDateFormat = aYear + "-" + bMonth + "-" + cDay + "T" + aHour + ":" + bMin;
     console.log(curDateFormat); 
