@@ -9,9 +9,9 @@ function timerRunning() {
 function curDate() {
     var curDate = new Date();
     console.log(curDate);
-    var aHour = curDate.getHours().toString().padStart(2,"0");
-    var bMin = curDate.getMinutes().toString().padStart(2,"0");
-    var cSec = curDate.getSeconds().toString().padStart(2,"0");
+    var aHour = curDate.getHours().toString();
+    var bMin = curDate.getMinutes().toString();
+    var cSec = curDate.getSeconds().toString();
     var aYear = curDate.getFullYear();
     var bMonth = curDate.getMonth() + 1;
     bMonth = bMonth.toString();
