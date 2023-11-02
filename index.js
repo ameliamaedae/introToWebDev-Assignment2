@@ -9,13 +9,13 @@ function timerRunning() {
 function curDate() {
     var curDate = new Date();
     console.log(curDate);
-    var aHour = curDate.getHours().toString();
-    var bMin = curDate.getMinutes().toString();
-    var cSec = curDate.getSeconds().toString();
+    var aHour = curDate.getHours().toString().padStart(2,"0");;
+    var bMin = curDate.getMinutes().toString().padStart(2,"0");;
+    var cSec = curDate.getSeconds().toString().padStart(2,"0");;
     var aYear = curDate.getFullYear();
     var bMonth = curDate.getMonth() + 1;
     bMonth = bMonth.toString();
-    var cDay = curDate.getDate();
+    var cDay = curDate.getDate().toString().padStart(2,"0");
     var curDateFormat = aYear + "-" + bMonth + "-" + cDay + "T" + aHour + ":" + bMin;
     console.log(curDateFormat); 
     var x = document.getElementById("startDate");
